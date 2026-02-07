@@ -1,4 +1,4 @@
-baseURL = "https://username.github.io"  # You'll update this with your actual GitHub Pages URL
+baseURL = "https://blog.darkpixeltech.com/"
 languageCode = "en-us"
 title = "Ben & Daniel's Blog"
 theme = "minimal-dark"
