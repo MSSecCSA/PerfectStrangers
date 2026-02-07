@@ -1,0 +1,34 @@
+{{ define "main" }}
+<div class="home-intro">
+    <h1>{{ .Site.Title }}</h1>
+    <p>{{ .Site.Params.description }}</p>
+</div>
+
+<div class="recent-posts">
+    <h2>Recent Posts</h2>
+    {{ if .Site.RegularPages }}
+        <ul class="post-list">
+            {{ range first 10 (where .Site.RegularPages "Type" "posts") }}
+            <li class="post-item">
+                <h3 class="post-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h3>
+                <div class="post-meta">
+                    {{ .Date.Format "January 2, 2006" }}
+                    {{ if .Params.authors }}
+                    by {{ delimit .Params.authors ", " " & " }}
+                    {{ end }}
+                </div>
+                {{ if .Summary }}
+                <div class="post-summary">
+                    {{ .Summary }}
+                </div>
+                {{ end }}
+            </li>
+            {{ end }}
+        </ul>
+    {{ else }}
+        <p>No posts yet. <a href="/posts/">Create your first post</a>!</p>
+    {{ end }}
+</div>
+{{ end }}

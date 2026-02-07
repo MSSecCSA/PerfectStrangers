@@ -1,0 +1,29 @@
+baseURL = "https://username.github.io"  # You'll update this with your actual GitHub Pages URL
+languageCode = "en-us"
+title = "Ben & Daniel's Blog"
+theme = "minimal-dark"
+
+[params]
+  description = "Collaborative thoughts on AI, development, and digital transformation"
+  author = "Ben & Daniel"
+  accent_color = "#2563eb"  # Blue accent color, you can change this
+
+[menu]
+[[menu.main]]
+  name = "Posts"
+  url = "/posts/"
+  weight = 10
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 20
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Allows HTML in markdown
+  [markup.highlight]
+    style = "github-dark"
+    lineNos = true
+    tabWidth = 2
