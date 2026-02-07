@@ -1,0 +1,295 @@
+/* Matrix/Hacker Style Enhancements for Daniel & Ben Blog */
+
+/* Custom Matrix-inspired animations */
+@keyframes matrix-rain {
+    0% { opacity: 0; transform: translateY(-100px); }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; transform: translateY(100vh); }
+}
+
+@keyframes beacon-pulse {
+    0%, 100% { 
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.3),
+                    0 0 20px rgba(255, 215, 0, 0.2),
+                    0 0 30px rgba(255, 215, 0, 0.1);
+    }
+    50% { 
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.5),
+                    0 0 30px rgba(255, 215, 0, 0.3),
+                    0 0 45px rgba(255, 215, 0, 0.2);
+    }
+}
+
+@keyframes text-glitch {
+    0% { transform: skew(0deg); }
+    20% { transform: skew(2deg); }
+    40% { transform: skew(-1deg); }
+    60% { transform: skew(1deg); }
+    80% { transform: skew(-2deg); }
+    100% { transform: skew(0deg); }
+}
+
+@keyframes code-flow {
+    0% { transform: translateY(-100%); opacity: 0; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { transform: translateY(100%); opacity: 0; }
+}
+
+/* Matrix background effect */
+.matrix-background::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(
+            90deg,
+            transparent 24px,
+            rgba(0, 255, 0, 0.03) 25px,
+            rgba(0, 255, 0, 0.03) 26px,
+            transparent 27px,
+            transparent 53px,
+            rgba(0, 255, 0, 0.03) 54px,
+            rgba(0, 255, 0, 0.03) 55px,
+            transparent 56px
+        ),
+        linear-gradient(
+            180deg,
+            transparent 24px,
+            rgba(0, 255, 0, 0.03) 25px,
+            rgba(0, 255, 0, 0.03) 26px,
+            transparent 27px,
+            transparent 53px,
+            rgba(0, 255, 0, 0.03) 54px,
+            rgba(0, 255, 0, 0.03) 55px,
+            transparent 56px
+        );
+    background-size: 55px 55px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Watchtower hero section */
+.watchtower-hero {
+    position: relative;
+    height: 300px;
+    background: 
+        linear-gradient(
+            135deg, 
+            rgba(0, 0, 0, 0.8) 0%,
+            rgba(0, 20, 0, 0.6) 50%,
+            rgba(0, 0, 0, 0.8) 100%
+        ),
+        url('/images/wisdom_watchtower.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 3rem;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.watchtower-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 255, 0, 0.03) 2px,
+            rgba(0, 255, 0, 0.03) 4px
+        );
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    color: var(--text-color);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.hero-subtitle {
+    font-size: 1.1rem;
+    color: rgba(0, 255, 0, 0.8);
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+}
+
+/* Matrix-style site title */
+.matrix-title {
+    position: relative;
+    color: var(--text-color);
+    font-family: 'Courier New', monospace;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+.matrix-title::before {
+    content: '> ';
+    color: rgba(0, 255, 0, 0.7);
+    font-weight: bold;
+}
+
+.matrix-title:hover {
+    animation: text-glitch 0.3s ease-in-out;
+    text-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+/* Beacon-style accent elements */
+.beacon-accent {
+    position: relative;
+    color: #FFD700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+    animation: beacon-pulse 3s ease-in-out infinite;
+}
+
+.beacon-accent::before {
+    content: '🦁';
+    margin-right: 0.5rem;
+    filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.6));
+}
+
+/* Matrix-style code blocks */
+.matrix-code {
+    background: rgba(0, 20, 0, 0.8) !important;
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 8px;
+    font-family: 'Courier New', monospace;
+    color: #00ff00;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.matrix-code::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 255, 0, 0.1),
+        transparent
+    );
+    animation: code-flow 2s linear infinite;
+}
+
+/* Digital wisdom indicators */
+.wisdom-indicator {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 20, 0, 0.6);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: rgba(0, 255, 0, 0.8);
+    font-family: 'Courier New', monospace;
+    margin: 0.5rem 0;
+}
+
+.wisdom-indicator::before {
+    content: '◆';
+    color: #FFD700;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+/* Subtle scan lines effect */
+.scan-lines {
+    position: relative;
+}
+
+.scan-lines::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent 2px,
+            rgba(0, 255, 0, 0.02) 2px,
+            rgba(0, 255, 0, 0.02) 4px
+        );
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* Matrix-style post tags */
+.matrix-tag {
+    background: rgba(0, 20, 0, 0.8) !important;
+    border: 1px solid rgba(0, 255, 0, 0.4) !important;
+    color: rgba(0, 255, 0, 0.9) !important;
+    font-family: 'Courier New', monospace !important;
+    font-size: 0.8rem !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.matrix-tag:hover {
+    background: rgba(0, 255, 0, 0.1) !important;
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .watchtower-hero {
+        height: 200px;
+        background-attachment: scroll;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .matrix-title {
+        font-size: 1.2rem;
+    }
+}
+
+/* Accessibility: Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+    .matrix-code::before,
+    .beacon-accent,
+    .text-glitch {
+        animation: none;
+    }
+}
