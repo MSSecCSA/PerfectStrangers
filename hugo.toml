@@ -1,6 +1,6 @@
-baseURL = "https://blog.darkpixeltech.com/"
+baseURL = "https://username.github.io"  # You'll update this with your actual GitHub Pages URL
 languageCode = "en-us"
-title = "Ben & Daniel's Blog"
+title = "Daniel & Ben"
 theme = "minimal-dark"
 
 [params]
