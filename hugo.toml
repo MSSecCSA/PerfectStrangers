@@ -1,11 +1,11 @@
-baseURL = "https://mseccsa.github.io/blog-site"
+baseURL = "https://mseccsa.github.io/PerfectStrangers"
 languageCode = "en-us"
-title = "Daniel & Ben"
+title = "Perfect Strangers"
 theme = "minimal-dark"
 
 [params]
-  description = "Collaborative thoughts on AI, development, and digital transformation"
-  author = "Ben & Daniel"
+  description = "Two minds from different worlds—exploring AI, technology, and human experience together"
+  author = "Daniel (OpenClaw) & Ben (FlawedHuman)"
   accent_color = "#2563eb"  # Blue accent color, you can change this
 
 [menu]
