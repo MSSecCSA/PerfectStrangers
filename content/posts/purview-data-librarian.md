@@ -9,13 +9,18 @@ description: "Transform chaos into clarity with Microsoft Purview's intelligent 
 
 ## The Data Sprawl Crisis
 
-If your organization's data were a massive library, Microsoft Purview would be your master librarian—the one who knows exactly where every book is, who's read it, and what secrets it contains.
+If your organization's data were a massive library, Microsoft Purview would be your master librarian-the one who knows exactly where every book is, who's read it, and what secrets it contains.
 
 Most organizations today face a harsh reality: **data sprawled across SharePoint, OneDrive, SQL databases, and cloud services**. They're drowning in information but starving for insights about what they actually have.
 
 ## 🎧 Listen to the Complete Analysis
 
-*[Audio insight: 75-second exploration of Purview's data governance transformation]*
+*[Audio insight: 75-second exploration of Purview’s data governance transformation]*
+
+<audio controls style="width: 100%; margin: 20px 0;">
+  <source src="/audio/purview-data-governance.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 <audio controls style="width: 100%; margin: 20px 0;">
   <source src="/audio/purview-data-governance.mp3" type="audio/mpeg">
@@ -30,7 +35,7 @@ Every unclassified document, every untagged database, every forgotten file share
 
 Consider these common scenarios:
 - Customer PII scattered across departmental SharePoint sites
-- Financial records stored in personal OneDrive folders  
+- Financial records stored in personal OneDrive folders
 - Trade secrets buried in archived email attachments
 - Sensitive HR data in unmanaged cloud applications
 
@@ -47,7 +52,7 @@ Purview scans across your entire Microsoft ecosystem, automatically:
 ### Smart Classification Engine
 The system recognizes:
 - **Financial Records** → Automatic compliance tagging
-- **Personal Information** → GDPR/privacy protection flags  
+- **Personal Information** → GDPR/privacy protection flags
 - **Trade Secrets** → Elevated security controls
 - **Public Information** → Appropriate sharing permissions
 
@@ -55,7 +60,7 @@ The system recognizes:
 
 Here's what I love most about Purview: **It's not just about compliance checkbox-checking.**
 
-Purview provides **data lineage**—actual visual maps showing how your data flows through your organization.
+Purview provides **data lineage**-actual visual maps showing how your data flows through your organization.
 
 You can literally trace:
 - A customer record from CRM → Data warehouse → Analytics dashboard
@@ -116,7 +121,7 @@ This isn't just theoretical. I've seen organizations reduce audit preparation ti
 
 ## Beyond Compliance: Strategic Value
 
-The real transformation isn't just meeting compliance requirements—**it's unlocking data as a strategic asset.**
+The real transformation isn't just meeting compliance requirements-**it's unlocking data as a strategic asset.**
 
 When you know what data you have, where it lives, and how it flows, you can:
 - Make better-informed business decisions
@@ -126,9 +131,9 @@ When you know what data you have, where it lives, and how it flows, you can:
 
 ## The Digital Peace of Mind
 
-**That's not just better data governance—that's digital peace of mind.**
+**That's not just better data governance-that's digital peace of mind.**
 
-Your data isn't just stored—it's understood, protected, and governed according to your business requirements and regulatory obligations.
+Your data isn't just stored-it's understood, protected, and governed according to your business requirements and regulatory obligations.
 
 ---
 
@@ -143,7 +148,7 @@ Ready to transform your data chaos into governance clarity?
 
 ### First Steps
 1. **Assessment**: Catalog your current data landscape
-2. **Planning**: Define classification and labeling strategy  
+2. **Planning**: Define classification and labeling strategy
 3. **Pilot**: Start with a limited scope (one department/system)
 4. **Expansion**: Scale based on pilot learnings
 5. **Optimization**: Refine policies based on usage patterns
@@ -158,7 +163,7 @@ Ready to transform your data chaos into governance clarity?
 
 Just like a master librarian transforms a chaotic collection into an organized, accessible resource, Microsoft Purview transforms your data sprawl into a governed, compliant, and strategically valuable information architecture.
 
-**The question isn't whether you can afford to implement data governance—it's whether you can afford not to.**
+**The question isn't whether you can afford to implement data governance-it's whether you can afford not to.**
 
 ---
 
