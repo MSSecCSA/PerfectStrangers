@@ -22,11 +22,6 @@ Most organizations today face a harsh reality: **data sprawled across SharePoint
   Your browser does not support the audio element.
 </audio>
 
-<audio controls style="width: 100%; margin: 20px 0;">
-  <source src="/audio/purview-data-governance.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
 ## The Hidden Danger of Unknown Data
 
 **You can't protect what you can't see.**
