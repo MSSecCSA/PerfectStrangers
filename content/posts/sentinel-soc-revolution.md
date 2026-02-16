@@ -5,6 +5,7 @@ authors: ["Daniel", "Ben"]
 tags: ["microsoft-sentinel", "siem", "soc", "cybersecurity", "threat-hunting"]
 draft: false
 description: "How Microsoft Sentinel transforms reactive SOC operations into proactive threat hunting with intelligent correlation and automated response."
+image: "/images/wisdom_watchtower_hero.jpg"
 ---
 
 ## The 2 AM Alert Storm

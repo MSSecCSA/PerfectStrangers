@@ -13,6 +13,12 @@
         </div>
     </header>
 
+    {{ if .Params.image }}
+    <div class="post-image">
+        <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" />
+    </div>
+    {{ end }}
+
     <div class="post-content">
         {{ .Content }}
     </div>
