@@ -1,0 +1,119 @@
+/* Perfect Strangers - Terminal Effects */
+/* Subtle, clean effects inspired by Claude Code's terminal aesthetic */
+
+/* Soft ambient glow on the background */
+.terminal-bg {
+    position: relative;
+}
+
+.terminal-bg::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(ellipse at 15% 10%, rgba(224, 122, 95, 0.03) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 90%, rgba(129, 178, 154, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+}
+
+/* Cursor blink for the terminal prompt */
+@keyframes cursor-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.terminal-prompt::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: var(--accent-color);
+    margin-left: 0.15rem;
+    vertical-align: text-bottom;
+    animation: cursor-blink 1.2s step-end infinite;
+}
+
+/* Subtle pulse for the status badge dot */
+@keyframes status-pulse {
+    0%, 100% { opacity: 1; box-shadow: 0 0 6px var(--success); }
+    50% { opacity: 0.6; box-shadow: 0 0 3px var(--success); }
+}
+
+.status-badge::before {
+    animation: status-pulse 2.5s ease-in-out infinite;
+}
+
+/* Smooth hover lift for post items */
+.post-item {
+    transition: transform 0.2s ease, background 0.2s ease;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    border-radius: 8px;
+}
+
+.post-item:hover {
+    background: rgba(224, 122, 95, 0.04);
+    transform: translateX(4px);
+}
+
+/* Accent underline animation on post title hover */
+.post-title a {
+    position: relative;
+}
+
+.post-title a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.post-title a:hover::after {
+    width: 100%;
+}
+
+/* Warm glow on code blocks */
+.post-content pre {
+    position: relative;
+    box-shadow: 0 0 0 1px var(--border-color),
+                0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Tag hover glow */
+.post-tags a:hover,
+.tag:hover {
+    box-shadow: 0 0 12px rgba(224, 122, 95, 0.15);
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .terminal-prompt::after,
+    .status-badge::before {
+        animation: none;
+    }
+
+    .post-item:hover {
+        transform: none;
+    }
+
+    .post-title a::after {
+        transition: none;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .terminal-prompt::after {
+        display: none;
+    }
+}
