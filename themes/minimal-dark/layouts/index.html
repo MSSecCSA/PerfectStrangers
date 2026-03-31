@@ -1,9 +1,9 @@
 {{ define "main" }}
-<div class="watchtower-hero">
+<div class="terminal-hero">
     <div class="hero-content">
-        <h1 class="hero-title beacon-accent">{{ .Site.Title }}</h1>
+        <h1 class="hero-title"><span class="accent">Perfect Strangers</span></h1>
         <p class="hero-subtitle">{{ .Site.Params.description }}</p>
-        <div class="wisdom-indicator">WISDOM Framework Active</div>
+        <div class="status-badge">ben@claude ~ pipeline active</div>
     </div>
 </div>
 
@@ -31,7 +31,7 @@
             {{ end }}
         </ul>
     {{ else }}
-        <p>No posts yet. <a href="/posts/">Create your first post</a>!</p>
+        <p>No posts yet. Check back soon.</p>
     {{ end }}
 </div>
 {{ end }}
