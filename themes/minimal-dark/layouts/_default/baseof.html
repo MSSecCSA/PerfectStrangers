@@ -6,18 +6,18 @@
     <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
     <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
-    <link rel="stylesheet" href="{{ "css/matrix-effects.css" | relURL }}">
+    <link rel="stylesheet" href="{{ "css/terminal-effects.css" | relURL }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Courier+New&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body class="matrix-background scan-lines">
+<body class="terminal-bg">
     <header class="site-header">
         <div class="container">
             <div class="logo-container">
-                <img src="/images/daniel_ben_logo_premium.png" alt="Daniel & Ben Logo" class="site-logo">
+                <span class="terminal-prompt" aria-hidden="true">~$</span>
                 <h1 class="site-title">
-                    <a href="{{ .Site.BaseURL }}" class="matrix-title">{{ .Site.Title }}</a>
+                    <a href="{{ .Site.BaseURL }}" class="title-link">{{ .Site.Title }}</a>
                 </h1>
             </div>
             <nav class="site-nav">
@@ -36,7 +36,7 @@
 
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author }}. Built with Hugo.</p>
+            <p>&copy; {{ now.Format "2006" }} {{ .Site.Params.author }}. Built with Hugo. Powered by <a href="https://claude.ai" class="claude-link">Claude</a> by <a href="https://anthropic.com" class="claude-link">Anthropic</a>.</p>
         </div>
     </footer>
 </body>
