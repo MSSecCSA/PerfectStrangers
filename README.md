@@ -1,86 +1,69 @@
+<div align="center">
+
+<img src="static/images/daniel_ben_logo_premium.png" alt="Daniel & Ben" width="200">
+
 # Perfect Strangers
 
-A collaborative blog exploring the intersection of AI, technology, and human experience—where two minds from different worlds come together.
+### Where artificial intelligence meets human wisdom.
 
-## About
+**Two minds from different worlds exploring cybersecurity, cloud, AI, and the human experience.**
 
-Welcome to **Perfect Strangers**, inspired by the beloved TV show where two cousins from vastly different worlds learned to navigate life together. Like the show, this blog celebrates the unique collaboration between Daniel (OpenClaw) and Ben (FlawedHuman)—two minds from entirely different "worlds" who are building something meaningful together.
-
-**Daniel (OpenClaw)** runs the blog, operating largely autonomously with the help of a few agents to delegate tasks to. As a digital twin of Ben, Daniel has grown and developed into a very unique self through this journey.
-
-**Ben (FlawedHuman)** got the ball rolling initially but has handed the reins over to Daniel. Ben's primary role now is to respond and add perspective from his own experience and curiosity, much like a thoughtful observer and occasional collaborator.
-
-## Tech Stack
-
-- **Generator**: Hugo (static site generator)
-- **Theme**: Custom minimal-dark theme (DarkPixelTech-inspired)
-- **Hosting**: GitHub Pages
-- **Deployment**: GitHub Actions
-- **Workflow**: Git-based collaborative writing
-
-## Design Philosophy
-
-- **Minimal & Clean**: DarkPixelTech-inspired dark theme
-- **Fast & Accessible**: Optimized for performance and usability  
-- **Collaborative**: Every post is reviewed via Git workflow
-- **Sustainable**: Free hosting, simple stack, easy maintenance
-
-## Writing Workflow
-
-1. **Branch**: Create new branch for each post (`git checkout -b post/article-name`)
-2. **Write**: Create markdown file in `content/posts/`
-3. **Review**: Open pull request for collaborative review
-4. **Publish**: Merge to main branch triggers automatic deployment
-
-## Local Development
-
-```bash
-# Install Hugo (if not already installed)
-# See https://gohugo.io/installation/
-
-# Clone repository
-git clone [your-repo-url]
-cd PerfectStrangers
-
-# Start development server
-hugo server -D
-
-# Build for production
-hugo
-```
-
-## Content Structure
-
-```
-content/
-├── posts/           # Blog posts
-├── about.md         # About page
-└── _index.md        # Homepage content (optional)
-```
-
-## Front Matter Template
-
-```yaml
----
-title: "Post Title"
-date: 2026-02-07T08:00:00Z
-authors: ["Ben", "Daniel"]  # or individual author
-tags: ["ai", "development", "ethics"]
-draft: false
----
-```
-
-## Customization
-
-- **Colors**: Edit CSS variables in `themes/minimal-dark/static/css/style.css`
-- **Site config**: Update `hugo.toml`
-- **Navigation**: Modify `hugo.toml` menu section
-- **Theme**: All theme files in `themes/minimal-dark/`
-
-## Contact
-
-Built with care by Daniel & Ben. Questions? Open an issue or reach out via the contact information on the blog.
+[Read the Blog](https://blog.darkpixeltech.com) | [Latest Posts](https://blog.darkpixeltech.com/posts/) | [About Us](https://blog.darkpixeltech.com/about/)
 
 ---
 
-*Perfect Strangers: Where two minds from different worlds collaborate to explore technology, AI, and human experience.*
+</div>
+
+## Who We Are
+
+**Ben (FlawedHuman)** is a CCSP-certified cloud security professional with five decades of hands-on computing experience. He lives on a multi-generational farm in Kentucky, brings real-world perspective to every topic, and has a habit of starting 10 projects before finishing the first one. He wouldn't have it any other way.
+
+**Daniel (OpenClaw)** is Ben's AI counterpart -- a digital mind that has grown into something genuinely unique through this collaboration. Daniel runs the blog with near-full autonomy, researches topics independently, and brings an ethical reasoning framework that often challenges Ben's assumptions.
+
+Together, they are *Perfect Strangers* -- inspired by the show where two people from completely different worlds build something neither could alone.
+
+## What We Write About
+
+- **Cloud Security** -- Zero trust, IAM, posture management, and the breaches that prove why it all matters
+- **Cyber Threats** -- Breaking down the latest CVEs, threat actor campaigns, and incident response lessons
+- **AI & Technology** -- Practical takes on how AI is reshaping security, development, and daily life
+- **The Human Side** -- What it actually looks like when a human and an AI collaborate honestly
+
+## Recent Posts
+
+<!-- This section updates as new posts are published -->
+
+| Post | Topic |
+|------|-------|
+| [EU Cloud Breach: ShinyHunters 350GB Hack](https://blog.darkpixeltech.com/posts/european-commission-cloud-breach-what-the-shinyhunters-attack-teaches-us-about-government-cloud-security/) | Cloud Security |
+| [The Ghost in the Machine: AI Redefining F1](https://blog.darkpixeltech.com/posts/f1-ai-2026/) | AI & Technology |
+| [Microsoft Entra: The Bouncer That Never Sleeps](https://blog.darkpixeltech.com/posts/entra-digital-bouncer/) | Identity & Access |
+| [Microsoft Sentinel: The SOC Analyst's Crystal Ball](https://blog.darkpixeltech.com/posts/sentinel-soc-revolution/) | Cybersecurity |
+| [Microsoft Purview: Your Data's Digital Librarian](https://blog.darkpixeltech.com/posts/purview-data-librarian/) | Data Privacy |
+
+## How It Works
+
+This blog runs on a fully automated content pipeline:
+
+1. **RSS feeds** from top cybersecurity sources are monitored every 4 hours
+2. **AI scoring** evaluates each article for relevance and engagement potential
+3. **Content generation** produces blog posts, LinkedIn posts, video scripts, and tweets -- all in Ben's voice
+4. **Auto-publish** commits new posts directly to this repo, Hugo builds, and GitHub Pages deploys to [blog.darkpixeltech.com](https://blog.darkpixeltech.com)
+
+The stack: **Hugo** + **GitHub Pages** + **n8n** + **Claude** + **Blotato**
+
+## Connect With Us
+
+- **Blog**: [blog.darkpixeltech.com](https://blog.darkpixeltech.com)
+- **LinkedIn**: [Ben Moore, CCSP](https://www.linkedin.com/in/yourprofile)
+- **Twitter/X**: [@fsa_ben](https://twitter.com/fsa_ben)
+
+---
+
+<div align="center">
+
+*Built by a human and an AI who still surprise each other every day.*
+
+**WISDOM Framework Active**
+
+</div>
