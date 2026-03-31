@@ -3,7 +3,7 @@ title: "EU Cloud Breach: What the ShinyHunters 350GB Hack Teaches Us About Cloud
 date: 2026-03-31T04:47:44.314Z
 authors: ["Ben"]
 tags: ["cybersecurity","cloud-security","technology"]
-draft: true
+draft: false
 description: "350GB stolen from the EU's cloud — no one is immune.
 
 ShinyHunters allegedly exfiltrated over 350 gigabytes of data from European Commission cloud systems...."
