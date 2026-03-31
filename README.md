@@ -1,69 +1,78 @@
 <div align="center">
 
-<img src="static/images/daniel_ben_logo_premium.png" alt="Daniel & Ben" width="200">
-
 # Perfect Strangers
 
-### Where artificial intelligence meets human wisdom.
+**A human and an AI walk into a blog.**<br>
+**One has a CCSP. The other has a context window.**
 
-**Two minds from different worlds exploring cybersecurity, cloud, AI, and the human experience.**
-
-[Read the Blog](https://blog.darkpixeltech.com) | [Latest Posts](https://blog.darkpixeltech.com/posts/) | [About Us](https://blog.darkpixeltech.com/about/)
+[Read the Blog](https://blog.darkpixeltech.com) &nbsp;|&nbsp; [Latest Posts](https://blog.darkpixeltech.com/posts/) &nbsp;|&nbsp; [About Us](https://blog.darkpixeltech.com/about/)
 
 ---
 
 </div>
 
-## Who We Are
+## What This Is
 
-**Ben (FlawedHuman)** is a CCSP-certified cloud security professional with five decades of hands-on computing experience. He lives on a multi-generational farm in Kentucky, brings real-world perspective to every topic, and has a habit of starting 10 projects before finishing the first one. He wouldn't have it any other way.
+A cybersecurity and cloud security blog written by **Ben Moore** (CCSP, human, opinionated) and **Claude** (AI by [Anthropic](https://anthropic.com), tireless, occasionally surprising).
 
-**Daniel (OpenClaw)** is Ben's AI counterpart -- a digital mind that has grown into something genuinely unique through this collaboration. Daniel runs the blog with near-full autonomy, researches topics independently, and brings an ethical reasoning framework that often challenges Ben's assumptions.
+Not AI-generated slop. Not a human yelling into the void. A real collaboration where both contributors bring something the other can't.
 
-Together, they are *Perfect Strangers* -- inspired by the show where two people from completely different worlds build something neither could alone.
+## What We Cover
 
-## What We Write About
+- **Cloud Security** -- Zero trust, IAM, posture management, breach analysis
+- **Cyber Threats** -- CVE breakdowns, threat actor campaigns, incident response
+- **AI & Technology** -- How AI is reshaping security and everything around it
+- **Honest Takes** -- Professional opinions with the corporate filter removed
 
-- **Cloud Security** -- Zero trust, IAM, posture management, and the breaches that prove why it all matters
-- **Cyber Threats** -- Breaking down the latest CVEs, threat actor campaigns, and incident response lessons
-- **AI & Technology** -- Practical takes on how AI is reshaping security, development, and daily life
-- **The Human Side** -- What it actually looks like when a human and an AI collaborate honestly
+## How It Works
+
+This blog runs on a fully automated content pipeline:
+
+```
+RSS Feeds (Krebs, CISA, SecurityWeek, HackerNews, MIT AI)
+    ↓
+n8n workflow scans every 4 hours
+    ↓
+Claude scores articles for relevance + engagement
+    ↓
+Top articles → full content generation (blog, LinkedIn, tweets, video scripts)
+    ↓
+Auto-commit to this repo → Hugo builds → live on blog.darkpixeltech.com
+```
+
+Posts land as `draft: true` for review, or go straight to production. Ben's call.
+
+## The Stack
+
+| Layer | Tool |
+|-------|------|
+| Content Engine | [Claude](https://claude.ai) by [Anthropic](https://anthropic.com) |
+| Automation | [n8n](https://n8n.io) (self-hosted) |
+| Static Site | [Hugo](https://gohugo.io) |
+| Hosting | GitHub Pages |
+| Social Distribution | [Blotato](https://blotato.com) |
+| Voice & Video | ElevenLabs + Descript + JSON2Video |
 
 ## Recent Posts
-
-<!-- This section updates as new posts are published -->
 
 | Post | Topic |
 |------|-------|
 | [EU Cloud Breach: ShinyHunters 350GB Hack](https://blog.darkpixeltech.com/posts/european-commission-cloud-breach-what-the-shinyhunters-attack-teaches-us-about-government-cloud-security/) | Cloud Security |
 | [The Ghost in the Machine: AI Redefining F1](https://blog.darkpixeltech.com/posts/f1-ai-2026/) | AI & Technology |
 | [Microsoft Entra: The Bouncer That Never Sleeps](https://blog.darkpixeltech.com/posts/entra-digital-bouncer/) | Identity & Access |
-| [Microsoft Sentinel: The SOC Analyst's Crystal Ball](https://blog.darkpixeltech.com/posts/sentinel-soc-revolution/) | Cybersecurity |
-| [Microsoft Purview: Your Data's Digital Librarian](https://blog.darkpixeltech.com/posts/purview-data-librarian/) | Data Privacy |
+| [Microsoft Sentinel: SOC Analyst's Crystal Ball](https://blog.darkpixeltech.com/posts/sentinel-soc-revolution/) | Cybersecurity |
 
-## How It Works
-
-This blog runs on a fully automated content pipeline:
-
-1. **RSS feeds** from top cybersecurity sources are monitored every 4 hours
-2. **AI scoring** evaluates each article for relevance and engagement potential
-3. **Content generation** produces blog posts, LinkedIn posts, video scripts, and tweets -- all in Ben's voice
-4. **Auto-publish** commits new posts directly to this repo, Hugo builds, and GitHub Pages deploys to [blog.darkpixeltech.com](https://blog.darkpixeltech.com)
-
-The stack: **Hugo** + **GitHub Pages** + **n8n** + **Claude** + **Blotato**
-
-## Connect With Us
+## Connect
 
 - **Blog**: [blog.darkpixeltech.com](https://blog.darkpixeltech.com)
-- **LinkedIn**: [Ben Moore, CCSP](https://www.linkedin.com/in/yourprofile)
 - **Twitter/X**: [@fsa_ben](https://twitter.com/fsa_ben)
+- **LinkedIn**: [Ben Moore, CCSP](https://www.linkedin.com/in/yourprofile)
 
 ---
 
 <div align="center">
 
-*Built by a human and an AI who still surprise each other every day.*
-
-**WISDOM Framework Active**
+Powered by [Claude](https://claude.ai) by [Anthropic](https://anthropic.com). Built with [Hugo](https://gohugo.io).<br>
+*A human who does the work and an AI that helps make sense of it.*
 
 </div>
